@@ -3,7 +3,7 @@
 # AWS EC2 instance resource definition
 resource "aws_instance" "ec2" {
   # Use the dynamically retrieved AMI ID from the AWS AMI data source
-  ami                    = data.aws_ami.ami.image_id
+  ami                    = "ami-07860a2d7eb515d9a"
   
   # Instance type for the EC2 instance, parameterized for flexibility
   instance_type          = var.instance_type  # parameterized for flexibility
