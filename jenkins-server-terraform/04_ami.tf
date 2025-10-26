@@ -1,5 +1,5 @@
 # Use Amazon Linux 2023 AMI
-data "aws_ami" "amazon_linux_2023" {
+data "aws_ami" "ami" {
   most_recent = true
 
   filter {
